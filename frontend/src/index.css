@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        /* Black background with white text for premium look */
+        --background: 0.15 0 0;
+        --foreground: 0.98 0 0;
+        --card: 0.18 0 0;
+        --card-foreground: 0.98 0 0;
+        --popover: 0.18 0 0;
+        --popover-foreground: 0.98 0 0;
+        /* Royal Purple as primary */
+        --primary: 0.45 0.22 290;
+        --primary-foreground: 0.98 0 0;
+        /* Cyan as secondary/accent */
+        --secondary: 0.75 0.15 195;
+        --secondary-foreground: 0.15 0 0;
+        --muted: 0.25 0 0;
+        --muted-foreground: 0.65 0 0;
+        /* Cyan accent */
+        --accent: 0.75 0.15 195;
+        --accent-foreground: 0.15 0 0;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 0.3 0 0;
+        --input: 0.3 0 0;
+        --ring: 0.45 0.22 290;
+        --chart-1: 0.45 0.22 290;
+        --chart-2: 0.75 0.15 195;
+        --chart-3: 0.6 0.18 270;
+        --chart-4: 0.7 0.12 210;
+        --chart-5: 0.5 0.2 300;
+        --sidebar: 0.18 0 0;
+        --sidebar-foreground: 0.98 0 0;
+        --sidebar-primary: 0.45 0.22 290;
+        --sidebar-primary-foreground: 0.98 0 0;
+        --sidebar-accent: 0.25 0 0;
+        --sidebar-accent-foreground: 0.98 0 0;
+        --sidebar-border: 0.3 0 0;
+        --sidebar-ring: 0.45 0.22 290;
+    }
+
+    .dark {
+        --background: 0.12 0 0;
+        --foreground: 0.98 0 0;
+        --card: 0.15 0 0;
+        --card-foreground: 0.98 0 0;
+        --popover: 0.15 0 0;
+        --popover-foreground: 0.98 0 0;
+        --primary: 0.55 0.22 290;
+        --primary-foreground: 0.98 0 0;
+        --secondary: 0.75 0.15 195;
+        --secondary-foreground: 0.12 0 0;
+        --muted: 0.22 0 0;
+        --muted-foreground: 0.65 0 0;
+        --accent: 0.75 0.15 195;
+        --accent-foreground: 0.12 0 0;
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.98 0 0;
+        --border: 0.25 0 0;
+        --input: 0.25 0 0;
+        --ring: 0.55 0.22 290;
+        --chart-1: 0.55 0.22 290;
+        --chart-2: 0.75 0.15 195;
+        --chart-3: 0.6 0.18 270;
+        --chart-4: 0.7 0.12 210;
+        --chart-5: 0.5 0.2 300;
+        --sidebar: 0.15 0 0;
+        --sidebar-foreground: 0.98 0 0;
+        --sidebar-primary: 0.55 0.22 290;
+        --sidebar-primary-foreground: 0.98 0 0;
+        --sidebar-accent: 0.22 0 0;
+        --sidebar-accent-foreground: 0.98 0 0;
+        --sidebar-border: 0.25 0 0;
+        --sidebar-ring: 0.55 0.22 290;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@layer utilities {
+    .text-gradient-purple-cyan {
+        background: linear-gradient(135deg, oklch(0.55 0.22 290), oklch(0.75 0.15 195));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .bg-gradient-purple-cyan {
+        background: linear-gradient(135deg, oklch(0.45 0.22 290), oklch(0.75 0.15 195));
+    }
+    
+    .bg-gradient-dark {
+        background: linear-gradient(180deg, oklch(0.12 0 0) 0%, oklch(0.15 0 0) 100%);
+    }
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: oklch(0.15 0 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: oklch(0.45 0.22 290);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.55 0.22 290);
+}

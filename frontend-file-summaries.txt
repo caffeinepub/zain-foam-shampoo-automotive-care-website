@@ -1,0 +1,11 @@
+{
+  "frontend/src/index.css": "Custom CSS with OKLCH color system defining a premium automotive brand theme with black background, royal purple primary, and cyan accent colors, plus custom utilities for gradients and smooth scrolling.",
+  "frontend/src/App.tsx": "Main application component that renders all sections of the Zain Foam Shampoo website including Hero, Product, HowItWorks, WhyChoose, DealerForm, Footer, and Toaster for notifications.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend integration, managing dealer inquiry submissions and retrievals with proper state invalidation.",
+  "frontend/src/components/Hero.tsx": "Hero section component with full-screen background image, brand logo, headline, sub-headline, and two CTA buttons for calling and scrolling to dealer form.",
+  "frontend/src/components/Product.tsx": "Product showcase section displaying two uploaded Zain Foam Shampoo product images in a side-by-side grid on desktop and a responsive carousel on mobile, along with five key product features in interactive cards with icons.",
+  "frontend/src/components/HowItWorks.tsx": "Three-step process section explaining how to use the product with numbered cards, icons, and descriptions over a background image.",
+  "frontend/src/components/WhyChoose.tsx": "Benefits section highlighting four key reasons to choose Zain with icons and descriptions in a responsive grid layout.",
+  "frontend/src/components/DealerForm.tsx": "Dealer registration form component with validation, backend integration, loading states, and success/error toast notifications.",
+  "frontend/src/components/Footer.tsx": "Footer component with brand logo, contact information, and attribution to caffeine.ai with love icon."
+}
